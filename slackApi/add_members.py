@@ -19,7 +19,7 @@ class AddMembers:
         # Initialize the Slack WebClient:-
         self.client = slack.WebClient(token=os.environ['SLACK_TOKEN'])
 
-    def add_members(self, channel_id, user_id_list):
+    def add_members(self, channel_id: str, user_id_list: list):
         try:
             self.client.conversations_invite(channel=channel_id, users=user_id_list)
             print('Member: Added')

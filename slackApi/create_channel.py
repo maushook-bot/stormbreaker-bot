@@ -19,7 +19,7 @@ class CreateChannel:
         # Initialize the Slack WebClient:-
         self.client = slack.WebClient(token=os.environ['SLACK_TOKEN'])
 
-    def create_public_channel(self, channel_name):
+    def create_public_channel(self, channel_name: str):
         # TODO: Create a new public channel:-
         try:
             self.client.conversations_create(name=channel_name)

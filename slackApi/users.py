@@ -23,7 +23,7 @@ class Users:
         return self.client.users_list()
 
     @staticmethod
-    def search_user_id(usr_name, user_list):
+    def search_user_id(usr_name: list, user_list: list) -> list:
         print('usr_name => ', usr_name)
         usr_list = []
         # TODO: Get User Id list for Matching name

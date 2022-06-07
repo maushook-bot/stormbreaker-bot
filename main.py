@@ -1,8 +1,8 @@
 """
 SLACK BOT: CLIENT AUTOMATION TESTING APPLICATION
-Name: Bi-frost
+Name: StormBreaker
 Phase: Beta
-version: 0.1
+version: 0.2
 workspace: Neural Bots
 """
 
@@ -37,7 +37,7 @@ if __name__ == '__main__':
     print('channel-id => ', channel_id)
     ct.set_public_channel_topic(channel_id, data['channel_topic'])
 
-    # TODO: Add Members to Channel:-d
+    # TODO: Add Members to Channel:-
     user_list = usr.get_users_list()
     print('User-list: ', user_list)
     user_id_list: list = usr.search_user_id(usr_name=data['channel_members'], user_list=user_list['members'])
